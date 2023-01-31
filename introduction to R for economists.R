@@ -20,3 +20,12 @@ install.packages("flextable")
 library(flextable)
 mtcars %>% 
 flextable()
+# Flextable isn't installing. Requires new htmltools package. New package won't download for me
+# Will update RStudio and see if I can from there
+
+## gt
+#install.packages("gt")
+library(gt)
+
+mtcars %>%
+  gt()
