@@ -11,17 +11,14 @@
 
 pkgbuild::has_rtools()
 # looks like the latest rtools wasnt installed. Make sure old versions (4.0  and 4.3 are deleted)
-
-
+# I need rtools 4.2, i have 4(old) and 4.3 (developer)
+# Get Lee to uninstall the other rtools and install the correct one
+--------------------------------------------------------------------------------
 # Introduction to R, for Economists
 library(tidyverse)
-## If there is something you want to do, there's probably a package for it ----
+## There's a package for everything ----
 
-
-
- ## Let this be either the first or the last section 
-
-# XKCD Data --------------------------------------------------------------------
+# XKCD Data 
 # Package for downloading XKCD comics
 #install.packages("XKCDdata")
 library(XKCDdata)
@@ -83,8 +80,12 @@ rownames_to_column(var = "Model") %>%
   theme_zebra() 
 
 # https://ardata-fr.github.io/flextable-book/design.html
+# Show some of the very pretty table sin the documentation
 
 ## gt---------------------------------------------------------------------------
+
+# Do i need this if I have flextable already? Probably not.
+
 #install.packages("gt")
 library(gt)
 
@@ -102,8 +103,11 @@ library(ts)
 # OR use modeltime https://cran.r-project.org/web/packages/modeltime/index.html
 
 #install.packages("modeltime")
+#install.packages("tidymodels")
+#install.packages("lubridate")
 library(modeltime)
-
+library(tidymodels)
+library(lubridate)
 
 
 
