@@ -143,6 +143,7 @@ bike_data <- bike_sharing_daily %>%
   select(dteday, cnt)
 
 bike_data %>% plot_time_series(.date_var = dteday, .value = cnt, .interactive = interactive)
+
 interactive <- TRUE
 
 # this is a plotly (opposed to ggplot visualisation) which means we can interact  
@@ -174,17 +175,68 @@ model_boosted_arima <- arima_boost(
   fit(cnt ~ dteday + as.numeric(dteday),
     data = training(splits))
 
-# Third lets fit an Error-Trend Season (ETS) model
+## Third lets fit an Error-Trend Season (ETS) model
 model_ets <- exp_smoothing() %>% 
-  set
+  set_engine(engine = "ets") %>% 
+  fit(cnt ~ dteday, data = training(splits))
+
+## Fourth lets fit a Prophet model
+model_prophet <- prophet_reg() %>% 
+  set_engine(engine = "prophet") %>% 
+  fit(cnt ~ dteday, data = training(splits))
+
+## Fifth lets fit a Linear Regression
+
+model_linear_regression <- linear_reg() %>% 
+  set_engine(engine = "lm") %>% 
+  fit(cnt ~ as.numeric(dteday) + factor(month(dteday, label = T),
+                                        ordered = F),
+      data = training(splits))
+      
+# 3) Creating the modeltime table
+tbl_models <- modeltime_table(
+  model_arima,
+  model_boosted_arima,
+  model_ets,
+  model_prophet,
+  model_linear_regression)
 
 
+tbl_models
 
-##
+# 4) Calibrate to testing sets
 
+tbl_calibration <- tbl_models %>% 
+  modeltime_calibrate(new_data = testing(splits))
+
+# 5) Testing set evaluation
+tbl_calibration %>% 
+  modeltime_forecast(
+    new_data = testing(splits),
+    actual_data = bike_data) %>% 
+  plot_modeltime_forecast(
+    .interactive = interactive
+  )
+
+modeltime_accuracy(tbl_calibration)
+
+# 6) Refit to full data set and forecast forward
+tbl_refit <- tbl_calibration %>% 
+  modeltime_refit(data = bike_data)
+
+tbl_refit %>% 
+  modeltime_forecast(h = "3 weeks", actual_data = bike_data) %>% 
+  plot_modeltime_forecast(
+    .legend_max_width = 25
+  )
+
+# Now the models are refitted to the actual data. This is just a taste of what
+# time series modelling can be like. There are numerous other models we can 
+# employ too but for times sake I have shown 5 and the modeltime workflow.
 
 ## Leaflet----------------------------------------------------------------------
 install.packages("leaflet")
+
 # https://rstudio.github.io/leaflet/
 # https://cran.r-project.org/web/packages/leaflet.minicharts/vignettes/introduction.html
 
