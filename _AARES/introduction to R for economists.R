@@ -95,19 +95,88 @@ mtcars %>%
   gt()
 
 ## ts (Time Series)-------------------------------------------------------------
-install.packages("ts")
-library(ts)
+# install.packages("ts")
+# library(ts)
 # https://koalatea.io/r-decompose-timeseries/.
 # https://www.datascienceinstitute.net/blog/time-series-decomposition-in-r
 
-# OR use modeltime https://cran.r-project.org/web/packages/modeltime/index.html
+# OR use
+
+
+
+# modeltime--------------------------------------------------------------------- 
+# https://cran.r-project.org/web/packages/modeltime/index.html
+
+# Modeltime combines both machine learning and time series modelling in one 
+# handy package.
+
+# https://www.rdocumentation.org/packages/modeltime/versions/1.2.4
+# this shows the different modelling (ARIMA/ETS/Random Forest/)
+
+# https://cran.r-project.org/web/packages/modeltime/vignettes/getting-started-with-modeltime.html
+
+
 
 #install.packages("modeltime")
 #install.packages("tidymodels")
 #install.packages("lubridate")
 library(modeltime)
 library(tidymodels)
+library(tidyverse)
+library(timetk)
 library(lubridate)
+
+?bike_sharing_daily
+bike_sharing_daily
+
+# Modeltime workflow:
+#   1) Split data ito traing and test
+#   2) Create and fit models
+#   3) Create model table
+#   4) Calibrate models
+#   5) Perform testing set evaluation
+#   6) Refit models to full dataset and forecast
+
+
+# 1) Selecting the timeseries date variable and the one we want to visualise
+bike_data <- bike_sharing_daily %>% 
+  select(dteday, cnt)
+
+bike_data %>% plot_time_series(.date_var = dteday, .value = cnt, .interactive = interactive)
+interactive <- TRUE
+
+# this is a plotly (opposed to ggplot visualisation) which means we can interact  
+# with it. But we can turn it off with the interactive arg which calls the
+# interactive object
+
+
+splits <- time_series_split(
+  data = bike_data, # specifying data 
+  date_var = dteday, # specifying the date variable
+  assess = "3 months", # specifying the assessment sample
+  cumulative = TRUE) # allowing resampling to change the size of the training set
+
+# 2) Create and fit models
+
+## First lets fit an ARIMA 
+model_arima <- arima_reg() %>% 
+  set_engine(engine = "auto_arima") %>% 
+  fit(cnt ~ dteday, data = training(splits))
+
+model_arima
+
+## Second lets fit a Boosted ARIMA
+model_boosted_arima <- arima_boost(
+  min_n = 2, #min. data points for for node to split
+  learn_rate = 0.015 #rate boosting algorithm adapts each iteration
+) %>% 
+  set_engine(engine = "auto_arima_xgboost") %>% 
+  fit(cnt ~ dteday + as.numeric(dteday),
+    data = training(splits))
+
+# Third lets fit an Error-Trend Season (ETS) model
+model_ets <- exp_smoothing() %>% 
+  set
 
 
 
