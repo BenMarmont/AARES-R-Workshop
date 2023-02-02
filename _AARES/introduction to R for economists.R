@@ -304,31 +304,33 @@ nz_outline <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/
 nz_regions <- st_read("_AARES/linz_download/nz-land-districts.shp")
 nz_outline <- st_read("_AARES/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
 
-
-
+# Re-formatting
 nz_regions_sf <- st_as_sf(nz_regions)
 nz_outline_sf <- st_as_sf(nz_outline)
 
+# Showing the regions outlines (extend into ocean)
 ggplot() +
   geom_sf(data = nz_regions_sf)
 
+# Trimming to the intersection of the coastlines layer
 trimmed <- st_intersection(nz_outline_sf, nz_regions_sf)
+ggplot()+
+  geom_sf(data = trimmed)
 
+# Plotting the trimmed outline and cropping to appropriate coords
 ggplot() +
   geom_sf(data = trimmed) +
-  coord_sf(xlim = c(160, 180), ylim = c(30, 50)) +
-  geom_label_repel(aes(data = NZUs, x = long, y = lat, label = Universities))
+  coord_sf(xlim = c(165, 180)) 
 
-# But we can improve
+# Add the NZUs dataset from before
 ggplot() +
   geom_sf(data = trimmed) +
-  coord_sf(xlim = c(160, 180), ylim = c(30, 50)) +
-  geom_label_repel(aes(data = NZUs, x = long, y = lat, label = Universities)) +
+  coord_sf(xlim = c(165, 180)) +
+  geom_label_repel(data = NZUs, aes(x = lng, y = lat, label = Universities)) +
   theme_economist() +
-  labs(title = "Map of New Zealand Univerisities",
-       xlab = "Longitude",
-       ylab = "Latitude",
-       caption = "University coordinates sourced from GoogleMaps")
-  
+  labs (title = "Universities of New Zealand",
+       caption = "Coordinates of Universities sourced from GoogleMaps") +
+  xlab("Longitude") +
+  ylab("Latitude")
 
 
