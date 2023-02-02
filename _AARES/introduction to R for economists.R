@@ -243,7 +243,7 @@ tbl_refit %>%
 # time series modelling can be like. There are numerous other models we can 
 # employ too but for times sake I have shown 5 and the modeltime workflow.
 
-# Modeltime decomposition-------------------------------------------------------
+# Decomposition-----------------------------------------------------------------
 ## Lets use the same data set
 library(parsnip)
 library(forecast)
@@ -306,6 +306,6 @@ NZUs %>% leaflet() %>%
   addMarkers(lng = ~lng, lat = ~lat, label = ~Universities, popup = "Universities of New Zealand") 
 ## Can assign the map and call it if I don't always want it built
 
-## sf 
+## sf --------------------------------------------------------------------------
 #install.packages("sf")
 library(sf)
