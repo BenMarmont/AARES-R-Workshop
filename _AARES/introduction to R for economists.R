@@ -22,7 +22,7 @@ library(tidyverse)
 # Package for downloading XKCD comics
 #install.packages("XKCDdata")
 library(XKCDdata)
-saved_comic <- get_comic(comic = 2048)
+#saved_comic <- get_comic(comic = 2048)
 print_xkcd(comic = 2048)
 print_xkcd(comic = 2327)
 
@@ -99,19 +99,6 @@ mtcars %>%
 # library(ts)
 # https://koalatea.io/r-decompose-timeseries/.
 # https://www.datascienceinstitute.net/blog/time-series-decomposition-in-r
-
-# OR use
-
-
-
-
-
-
-
-
-
-
-
 
 # modeltime--------------------------------------------------------------------- 
 # https://cran.r-project.org/web/packages/modeltime/index.html
@@ -262,8 +249,6 @@ elecequip %>% seas() %>%
   autoplot() +
   ggtitle("SEATS decomposition of electrical equipment index")
 
-bike_SEATS <- series(bike_data)
-
 ## using stl (base stats decomposition.) Would like to figure out the SEATS decomp.
   ## Seasonal Extraction in ARIMA Time Series
 ts_bike <- ts(bike_sharing_daily$cnt, frequency = 7)
@@ -311,9 +296,15 @@ NZUs %>% leaflet() %>%
 library(sf)
 library(ggthemes)
 library(ggrepel)
+library(here)
 
 nz_regions <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_download/nz-land-districts.shp")
 nz_outline <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
+
+nz_regions <- st_read("_AARES/linz_download/nz-land-districts.shp")
+nz_outline <- st_read("_AARES/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
+
+
 
 nz_regions_sf <- st_as_sf(nz_regions)
 nz_outline_sf <- st_as_sf(nz_outline)
