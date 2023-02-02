@@ -9,7 +9,7 @@
 
 #assign(".lib.loc", "C:/R_Packages", envir = environment(.libPaths))
 
-pkgbuild::has_rtools()
+#pkgbuild::has_rtools()
 # looks like the latest rtools wasnt installed. Make sure old versions (4.0  and 4.3 are deleted)
 # I need rtools 4.2, i have 4(old) and 4.3 (developer)
 # Get Lee to uninstall the other rtools and install the correct one
@@ -309,3 +309,35 @@ NZUs %>% leaflet() %>%
 ## sf --------------------------------------------------------------------------
 #install.packages("sf")
 library(sf)
+library(ggthemes)
+library(ggrepel)
+
+nz_regions <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_download/nz-land-districts.shp")
+nz_outline <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
+
+nz_regions_sf <- st_as_sf(nz_regions)
+nz_outline_sf <- st_as_sf(nz_outline)
+
+ggplot() +
+  geom_sf(data = nz_regions_sf)
+
+trimmed <- st_intersection(nz_outline_sf, nz_regions_sf)
+
+ggplot() +
+  geom_sf(data = trimmed) +
+  coord_sf(xlim = c(160, 180), ylim = c(30, 50)) +
+  geom_label_repel(aes(data = NZUs, x = long, y = lat, label = Universities))
+
+# But we can improve
+ggplot() +
+  geom_sf(data = trimmed) +
+  coord_sf(xlim = c(160, 180), ylim = c(30, 50)) +
+  geom_label_repel(aes(data = NZUs, x = long, y = lat, label = Universities)) +
+  theme_economist() +
+  labs(title = "Map of New Zealand Univerisities",
+       xlab = "Longitude",
+       ylab = "Latitude",
+       caption = "University coordinates sourced from GoogleMaps")
+  
+
+
