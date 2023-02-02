@@ -120,6 +120,7 @@ library(modeltime)
 library(tidymodels)
 library(tidyverse)
 library(timetk)
+library(parsnip)
 library(lubridate)
 
 ?bike_sharing_daily
@@ -232,18 +233,25 @@ tbl_refit %>%
 
 # Decomposition-----------------------------------------------------------------
 ## Lets use the same data set
-library(parsnip)
-library(forecast)
-library(rsample)
-library(modeltime)
-library(tidyverse)
-library(timetk)
-library(rlang)
 
-#install.packages("seasonal")
-library(seasonal)
-#install.packages("fpp")
-library(fpp)
+# Needed libraries
+library(tidyverse) #needed for ggtitle
+library(seasonal) #needed for seas()
+library(fpp)  #need for the elecequip data set
+
+
+
+
+
+
+# library(parsnip)
+# library(forecast)
+# library(rsample)
+# library(modeltime)
+# library(timetk)
+#library(rlang)
+
+
 
 elecequip %>% seas() %>%
   autoplot() +
@@ -296,7 +304,7 @@ NZUs %>% leaflet() %>%
 library(sf)
 library(ggthemes)
 library(ggrepel)
-library(here)
+# library(here)
 library(tidyverse)
 
 # nz_regions <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_download/nz-land-districts.shp")
