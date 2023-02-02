@@ -1,39 +1,23 @@
-# Troubleshooting with Lee
-# # .libPaths()
-# R_LIBS_USER
-# R_LIBs
-
-# Looks like RTools isnt installed
-# Looks like if admin deletes HTMLtools from programe files I can install fresh
-## As I don't have the ability to write over old program files
-
-#assign(".lib.loc", "C:/R_Packages", envir = environment(.libPaths))
-
-#pkgbuild::has_rtools()
-# looks like the latest rtools wasnt installed. Make sure old versions (4.0  and 4.3 are deleted)
-# I need rtools 4.2, i have 4(old) and 4.3 (developer)
-# Get Lee to uninstall the other rtools and install the correct one
---------------------------------------------------------------------------------
 # Introduction to R, for Economists
 library(tidyverse)
-## There's a package for everything ----
+
+# Don't stress about coding along  with me here, 
+#   there are a lot of packages to download. Do ask questions and make suggestions
+
+## There's a package for everything---------------------------------------------
 
 # XKCD Data 
 # Package for downloading XKCD comics
-#install.packages("XKCDdata")
 library(XKCDdata)
-#saved_comic <- get_comic(comic = 2048)
+
 print_xkcd(comic = 2048)
 print_xkcd(comic = 2327)
-
- ##
 
 ## Flextable--------------------------------------------------------------------
 
 # Lets look at how we might create publication quality tables using the flextable
 # package and the mtcars dataset (part of the tidyverse) 
 
-#install.packages("flextable")
 library(flextable)
 
 mtcars
@@ -82,23 +66,6 @@ rownames_to_column(var = "Model") %>%
 # https://ardata-fr.github.io/flextable-book/design.html
 # Show some of the very pretty table sin the documentation
 
-## gt---------------------------------------------------------------------------
-
-# Do i need this if I have flextable already? Probably not.
-
-#install.packages("gt")
-library(gt)
-
-mtcars %>%
-  rownames_to_column(var = "model") %>% 
-  select(model, mpg) %>% 
-  gt()
-
-## ts (Time Series)-------------------------------------------------------------
-# install.packages("ts")
-# library(ts)
-# https://koalatea.io/r-decompose-timeseries/.
-# https://www.datascienceinstitute.net/blog/time-series-decomposition-in-r
 
 # modeltime--------------------------------------------------------------------- 
 # https://cran.r-project.org/web/packages/modeltime/index.html
@@ -127,7 +94,7 @@ library(lubridate)
 bike_sharing_daily
 
 # Modeltime workflow:
-#   1) Split data ito traing and test
+#   1) Split data ito training and test
 #   2) Create and fit models
 #   3) Create model table
 #   4) Calibrate models
@@ -232,33 +199,15 @@ tbl_refit %>%
 # employ too but for times sake I have shown 5 and the modeltime workflow.
 
 # Decomposition-----------------------------------------------------------------
-## Lets use the same data set
-
-# Needed libraries
 library(tidyverse) #needed for ggtitle
 library(seasonal) #needed for seas()
 library(fpp)  #need for the elecequip data set
-
-
-
-
-
-
-# library(parsnip)
-# library(forecast)
-# library(rsample)
-# library(modeltime)
-# library(timetk)
-#library(rlang)
-
-
 
 elecequip %>% seas() %>%
   autoplot() +
   ggtitle("SEATS decomposition of electrical equipment index")
 
-## using stl (base stats decomposition.) Would like to figure out the SEATS decomp.
-  ## Seasonal Extraction in ARIMA Time Series
+## using sthe previous bikes dataset
 ts_bike <- ts(bike_sharing_daily$cnt, frequency = 7)
 
 ts_bike %>%
@@ -268,7 +217,6 @@ ts_bike %>%
 
 
 ## Leaflet----------------------------------------------------------------------
-#install.packages("leaflet")
 library(leaflet)
 # https://rstudio.github.io/leaflet/
 # https://cran.r-project.org/web/packages/leaflet.minicharts/vignettes/introduction.html
@@ -300,22 +248,13 @@ NZUs %>% leaflet() %>%
 ## Can assign the map and call it if I don't always want it built
 
 ## sf --------------------------------------------------------------------------
-#install.packages("sf")
 library(sf)
 library(ggthemes)
 library(ggrepel)
-# library(here)
 library(tidyverse)
-
-# nz_regions <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_download/nz-land-districts.shp")
-# nz_outline <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
 
 nz_regions_sf <- st_read("_AARES/linz_download/nz-land-districts.shp")
 nz_outline_sf <- st_read("_AARES/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
-
-# Re-formatting
-# nz_regions_sf <- st_as_sf(nz_regions)
-# nz_outline_sf <- st_as_sf(nz_outline)
 
 # Showing the regions outlines (extend into ocean)
 ggplot() +
@@ -323,6 +262,7 @@ ggplot() +
 
 # Trimming to the intersection of the coastlines layer
 trimmed <- st_intersection(nz_outline_sf, nz_regions_sf)
+
 ggplot()+
   geom_sf(data = trimmed)
 
@@ -340,7 +280,7 @@ ggplot() +
 # Can be better again, theme, title, caption, axis labels
 
 # Add the NZUs dataset from before
-ggplot() +
+NZUS_sf <- ggplot() +
   geom_sf(data = trimmed) +
   coord_sf(xlim = c(165, 180)) +
   geom_label_repel(data = NZUs, aes(x = lng, y = lat, label = Universities)) +
@@ -349,5 +289,3 @@ ggplot() +
        caption = "Coordinates of Universities sourced from GoogleMaps") +
   xlab("Longitude") +
   ylab("Latitude")
-
-
