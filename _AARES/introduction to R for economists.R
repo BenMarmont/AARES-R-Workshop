@@ -297,16 +297,17 @@ library(sf)
 library(ggthemes)
 library(ggrepel)
 library(here)
+library(tidyverse)
 
-nz_regions <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_download/nz-land-districts.shp")
-nz_outline <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
+# nz_regions <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_download/nz-land-districts.shp")
+# nz_outline <- st_read("C:/Users/MarmontB/OneDrive - DairyNZ Limited/Documents/R/Thesis_new/Economics/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
 
-nz_regions <- st_read("_AARES/linz_download/nz-land-districts.shp")
-nz_outline <- st_read("_AARES/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
+nz_regions_sf <- st_read("_AARES/linz_download/nz-land-districts.shp")
+nz_outline_sf <- st_read("_AARES/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
 
 # Re-formatting
-nz_regions_sf <- st_as_sf(nz_regions)
-nz_outline_sf <- st_as_sf(nz_outline)
+# nz_regions_sf <- st_as_sf(nz_regions)
+# nz_outline_sf <- st_as_sf(nz_outline)
 
 # Showing the regions outlines (extend into ocean)
 ggplot() +
@@ -321,6 +322,14 @@ ggplot()+
 ggplot() +
   geom_sf(data = trimmed) +
   coord_sf(xlim = c(165, 180)) 
+
+# Adding NZUs
+ggplot() +
+  geom_sf(data = trimmed) +
+  coord_sf(xlim = c(165, 180)) +
+  geom_label_repel(data = NZUs, aes(x = lng, y = lat, label = Universities))
+
+# Can be better again, theme, title, caption, axis labels
 
 # Add the NZUs dataset from before
 ggplot() +
