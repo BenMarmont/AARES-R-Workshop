@@ -104,6 +104,15 @@ mtcars %>%
 
 
 
+
+
+
+
+
+
+
+
+
 # modeltime--------------------------------------------------------------------- 
 # https://cran.r-project.org/web/packages/modeltime/index.html
 
@@ -115,7 +124,7 @@ mtcars %>%
 
 # https://cran.r-project.org/web/packages/modeltime/vignettes/getting-started-with-modeltime.html
 
-
+# Modeltime forecasting---------------------------------------------------------
 
 #install.packages("modeltime")
 #install.packages("tidymodels")
@@ -142,9 +151,9 @@ bike_sharing_daily
 bike_data <- bike_sharing_daily %>% 
   select(dteday, cnt)
 
-bike_data %>% plot_time_series(.date_var = dteday, .value = cnt, .interactive = interactive)
-
 interactive <- TRUE
+
+bike_data %>% plot_time_series(.date_var = dteday, .value = cnt, .interactive = interactive)
 
 # this is a plotly (opposed to ggplot visualisation) which means we can interact  
 # with it. But we can turn it off with the interactive arg which calls the
@@ -234,14 +243,69 @@ tbl_refit %>%
 # time series modelling can be like. There are numerous other models we can 
 # employ too but for times sake I have shown 5 and the modeltime workflow.
 
-## Leaflet----------------------------------------------------------------------
-install.packages("leaflet")
+# Modeltime decomposition-------------------------------------------------------
+## Lets use the same data set
+library(parsnip)
+library(forecast)
+library(rsample)
+library(modeltime)
+library(tidyverse)
+library(timetk)
+library(rlang)
 
+#install.packages("seasonal")
+library(seasonal)
+#install.packages("fpp")
+library(fpp)
+
+elecequip %>% seas() %>%
+  autoplot() +
+  ggtitle("SEATS decomposition of electrical equipment index")
+
+bike_SEATS <- series(bike_data)
+
+## using stl (base stats decomposition.) Would like to figure out the SEATS decomp.
+  ## Seasonal Extraction in ARIMA Time Series
+ts_bike <- ts(bike_sharing_daily$cnt, frequency = 7)
+
+ts_bike %>%
+  stl(s.window="periodic") %>%
+  autoplot()
+
+
+
+## Leaflet----------------------------------------------------------------------
+#install.packages("leaflet")
+library(leaflet)
 # https://rstudio.github.io/leaflet/
 # https://cran.r-project.org/web/packages/leaflet.minicharts/vignettes/introduction.html
 
-## 
+# Leadflet creates interactive maps
 
-## sf
+## Leaflet workflow
+#   1) Create a map widget by calling leaflet()
+#   2) Add layers/features to map with layer functions
+#   3) Repeat step 2 as desired
+#   4) Print the map widget to display it
+
+# Map of Auckland University (birthplace of R)
+Auckland_University <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+Auckland_University
+
+## Extension - adding several points to an interactive map
+
+NZUs <- tibble(Universities = c("UoA", "AUT", "Waikato", "Massey", "Vic", "Canterbury", "Lincoln", "Otago"),
+               lat = c(-36.85224823346041, -36.853412307817784, -37.78890569065363, -40.355225055311955, -41.29002684516775, -43.52237464482431, -43.645401275754104, -45.864063192916205),
+               lng = c(174.77252663829262, 174.76643757919567, 175.3164528404978, 175.60943830584307,174.76783598210622, 172.57943539626334, 172.46426811709463, 170.5146851684737)) %>% 
+  select(Universities, lng, lat)
+
+NZUs %>% leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lng = ~lng, lat = ~lat, label = ~Universities, popup = "Universities of New Zealand") 
+## Can assign the map and call it if I don't always want it built
+
+## sf 
 #install.packages("sf")
 library(sf)
