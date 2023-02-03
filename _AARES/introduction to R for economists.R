@@ -35,7 +35,7 @@ mtcars %>%
   select(cyl, hp, disp, mpg, wt, gear)
 
 # Combine both steps and send to flextable
-# mtcars %>% 
+mtcars %>% 
   rownames_to_column(var = "Model") %>%
   select(Model, cyl, hp, disp, mpg, wt, gear) %>%
   separate(Model, c("make", "model")) %>%
@@ -43,7 +43,7 @@ mtcars %>%
 
 # This is ok, but we can add headers and footers to make this better
 
-# mtcars %>% 
+mtcars %>% 
   rownames_to_column(var = "Model") %>%
   select(Model, cyl, hp, disp, mpg, wt, gear) %>%
   separate(Model, c("make", "model")) %>%
@@ -53,7 +53,7 @@ mtcars %>%
   add_footer_lines("mtcars data set showing headers and footers in flextable")
 
 # We can even add themes to further improve 
-# mtcars %>% 
+mtcars %>% 
 rownames_to_column(var = "Model") %>%
   select(Model, cyl, hp, disp, mpg, wt, gear) %>%
   separate(Model, c("make", "model")) %>%
@@ -280,7 +280,7 @@ ggplot() +
 # Can be better again, theme, title, caption, axis labels
 
 # Add the NZUs dataset from before
-NZUS_sf <- ggplot() +
+ggplot() +
   geom_sf(data = trimmed) +
   coord_sf(xlim = c(165, 180)) +
   geom_label_repel(data = NZUs, aes(x = lng, y = lat, label = Universities)) +
