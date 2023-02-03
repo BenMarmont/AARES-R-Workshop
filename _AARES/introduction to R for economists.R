@@ -35,33 +35,33 @@ mtcars %>%
   select(cyl, hp, disp, mpg, wt, gear)
 
 # Combine both steps and send to flextable
-mtcars %>% 
-  rownames_to_column(var = "Model") %>% 
-  select(Model, cyl, hp, disp, mpg, wt, gear) %>% 
-  separate(Model, c("make", "model")) %>% 
+# mtcars %>% 
+  rownames_to_column(var = "Model") %>%
+  select(Model, cyl, hp, disp, mpg, wt, gear) %>%
+  separate(Model, c("make", "model")) %>%
   flextable()
 
 # This is ok, but we can add headers and footers to make this better
 
-mtcars %>% 
-  rownames_to_column(var = "Model") %>% 
-  select(Model, cyl, hp, disp, mpg, wt, gear) %>% 
-  separate(Model, c("make", "model")) %>% 
-  flextable() %>% 
-  add_header_row(values = c("Car","Engine specifications", "Other physical specifications"), 
-                 colwidths = c(2,3,3)) %>%   
+# mtcars %>% 
+  rownames_to_column(var = "Model") %>%
+  select(Model, cyl, hp, disp, mpg, wt, gear) %>%
+  separate(Model, c("make", "model")) %>%
+  flextable() %>%
+  add_header_row(values = c("Car","Engine specifications", "Other physical specifications"),
+                 colwidths = c(2,3,3)) %>%
   add_footer_lines("mtcars data set showing headers and footers in flextable")
 
 # We can even add themes to further improve 
-mtcars %>% 
-rownames_to_column(var = "Model") %>% 
-  select(Model, cyl, hp, disp, mpg, wt, gear) %>% 
-  separate(Model, c("make", "model")) %>% 
-  flextable() %>% 
-  add_header_row(values = c("Car","Engine specifications", "Other physical specifications"), 
-                 colwidths = c(2,3,3)) %>%   
-  add_footer_lines("mtcars data set showing headers and footers in flextable") %>% 
-  theme_zebra() 
+# mtcars %>% 
+rownames_to_column(var = "Model") %>%
+  select(Model, cyl, hp, disp, mpg, wt, gear) %>%
+  separate(Model, c("make", "model")) %>%
+  flextable() %>%
+  add_header_row(values = c("Car","Engine specifications", "Other physical specifications"),
+                 colwidths = c(2,3,3)) %>%
+  add_footer_lines("mtcars data set showing headers and footers in flextable") %>%
+  theme_zebra()
 
 # https://ardata-fr.github.io/flextable-book/design.html
 # Show some of the very pretty table sin the documentation

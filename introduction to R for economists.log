@@ -1,0 +1,560 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.3)  3 FEB 2023 13:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"introduction to R for economists.tex"
+(./introduction to R for economists.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-01> (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip50
+\fb@frw=\dimen143
+\fb@frh=\dimen144
+\FrameRule=\dimen145
+\FrameSep=\dimen146
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 2021/01/29 v2.0g defines alltt environment
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/mathpazo.sty
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+pplx on input line 112.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/t1pplx.fd
+File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
+)) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count193
+\Gm@cntv=\count194
+\c@Gm@tempcnt=\count195
+\Gm@bindingoffset=\dimen147
+\Gm@wd@mp=\dimen148
+\Gm@odd@mp=\dimen149
+\Gm@even@mp=\dimen150
+\Gm@layoutwidth=\dimen151
+\Gm@layoutheight=\dimen152
+\Gm@layouthoffset=\dimen153
+\Gm@layoutvoffset=\dimen154
+\Gm@dimlist=\toks17
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count196
+)
+\@linkdim=\dimen155
+\Hy@linkcounter=\count197
+\Hy@pagecounter=\count198
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count199
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4045.
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4045.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4045.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4045.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4045.
+Package hyperref Info: Option `breaklinks' set `false' on input line 4045.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count266
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen156
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count267
+\Field@Width=\dimen157
+\Fld@charsize=\dimen158
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count268
+\c@Item=\count269
+\c@Hfootnote=\count270
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count271
+\c@bookmark@seq@number=\count272
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip51
+) (c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count273
+\l__pdf_internal_box=\box51
+) (./introduction to R for economists.aux)
+\openout1 = `"introduction to R for economists.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\big@size=\dimen159
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+
+Package geometry Warning: The marginal notes overrun the paper.
+     Add 4.86812pt and more to the right margin.
+
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 76.
+(./introduction to R for economists.out) (./introduction to R for economists.out)
+\@outlinefile=\write3
+\openout3 = `"introduction to R for economists.out"'.
+
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 85.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1pplx.fd
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 85.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 85.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 85.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 85.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+
+LaTeX Warning: No \author given.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 89.
+(c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 91.
+
+Overfull \hbox (0.46739pt too wide) in paragraph at lines 159--160
+[]\T1/lmtt/m/n/10 ## Warning: Expected 2 pieces. Additional pieces discarded in 5 rows [2, 4, 26, 27, 29].[] 
+ []
+
+
+Overfull \hbox (28.45343pt too wide) in paragraph at lines 252--252
+[][]\T1/lmtt/m/it/10 #   add_header_row(values = c("Car","Engine specifications", "Other physical specifications"), [][] 
+ []
+
+
+Overfull \hbox (28.45343pt too wide) in paragraph at lines 262--262
+[][]\T1/lmtt/m/it/10 #   add_header_row(values = c("Car","Engine specifications", "Other physical specifications"), [][] 
+ []
+
+
+Overfull \hbox (38.9534pt too wide) in paragraph at lines 280--280
+[][]\T1/lmtt/m/it/10 # https://cran.r-project.org/web/packages/modeltime/vignettes/getting-started-with-modeltime.html[][] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##    instant dteday     season    yr  mnth holiday weekday worki~1 weath~2  temp atemp   hum[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##      <dbl> <date>      <dbl> <dbl> <dbl>   <dbl>   <dbl>   <dbl>   <dbl> <dbl> <dbl> <dbl>[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  1       1 2011-01-01      1     0     1       0       6       0       2 0.344 0.364 0.806[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  2       2 2011-01-02      1     0     1       0       0       0       2 0.363 0.354 0.696[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  3       3 2011-01-03      1     0     1       0       1       1       1 0.196 0.189 0.437[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  4       4 2011-01-04      1     0     1       0       2       1       1 0.2   0.212 0.590[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  5       5 2011-01-05      1     0     1       0       3       1       1 0.227 0.229 0.437[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  6       6 2011-01-06      1     0     1       0       4       1       1 0.204 0.233 0.518[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  7       7 2011-01-07      1     0     1       0       5       1       2 0.197 0.209 0.499[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  8       8 2011-01-08      1     0     1       0       6       0       2 0.165 0.162 0.536[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ##  9       9 2011-01-09      1     0     1       0       0       0       1 0.138 0.116 0.434[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 314--314
+[]\T1/lmtt/m/n/10 ## 10      10 2011-01-10      1     0     1       0       1       1       1 0.151 0.151 0.483[] 
+ []
+
+
+Overfull \hbox (10.96736pt too wide) in paragraph at lines 331--331
+[][]\T1/lmtt/m/n/10 bike_data[] []%>%[] []\T1/lmtt/b/n/10 plot_time_series[][]\T1/lmtt/m/n/10 ([][].date_var[] []= dteday,[] [].value[] []= cnt,[] [].interactive[] []= interactive)[][] 
+ []
+
+
+Overfull \hbox (10.96736pt too wide) in paragraph at lines 401--402
+[]\T1/lmtt/m/it/10 ## Disabling yearly seasonality. Run prophet with yearly.seasonality=TRUE to override this.[] 
+ []
+
+
+Overfull \hbox (0.46739pt too wide) in paragraph at lines 403--403
+[]\T1/lmtt/m/it/10 ## Disabling daily seasonality. Run prophet with daily.seasonality=TRUE to override this.[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 463--463
+[]\T1/lmtt/m/n/10 ##   .model_id .model_desc                          .type   mae  mape  mase smape  rmse   rsq[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 463--463
+[]\T1/lmtt/m/n/10 ##       <int> <chr>                                <chr> <dbl> <dbl> <dbl> <dbl> <dbl> <dbl>[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 463--463
+[]\T1/lmtt/m/n/10 ## 1         1 ARIMA(0,1,3) WITH DRIFT              Test  2540.  475.  2.74  46.0 3188. 0.390[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 463--463
+[]\T1/lmtt/m/n/10 ## 2         2 ARIMA(1,1,1)(1,0,2)[7] WITH DRIFT W~ Test  2408.  460.  2.60  44.5 3043. 0.324[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 463--463
+[]\T1/lmtt/m/n/10 ## 3         3 ETS(M,A,N)                           Test  2802.  490.  3.03  48.7 3496. 0.416[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 463--463
+[]\T1/lmtt/m/n/10 ## 4         4 PROPHET                              Test  3063.  515.  3.31  51.6 3718. 0.292[] 
+ []
+
+
+Overfull \hbox (16.21735pt too wide) in paragraph at lines 463--463
+[]\T1/lmtt/m/n/10 ## 5         5 LM                                   Test  1310.  378.  1.42  30.0 1854. 0.214[] 
+ []
+
+
+Overfull \hbox (0.46739pt too wide) in paragraph at lines 475--475
+[]\T1/lmtt/m/it/10 ## Disabling daily seasonality. Run prophet with daily.seasonality=TRUE to override this.[] 
+ []
+
+[1
+
+{c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7]
+<figure/introduction-to-R-for-economists-Rnwauto-report-1.pdf, id=38, 433.62pt x 433.62pt>
+File: figure/introduction-to-R-for-economists-Rnwauto-report-1.pdf Graphic file (type pdf)
+<use figure/introduction-to-R-for-economists-Rnwauto-report-1.pdf>
+Package pdftex.def Info: figure/introduction-to-R-for-economists-Rnwauto-report-1.pdf  used on input line 500.
+(pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
+<figure/introduction-to-R-for-economists-Rnwauto-report-2.pdf, id=39, 433.62pt x 433.62pt>
+File: figure/introduction-to-R-for-economists-Rnwauto-report-2.pdf Graphic file (type pdf)
+<use figure/introduction-to-R-for-economists-Rnwauto-report-2.pdf>
+Package pdftex.def Info: figure/introduction-to-R-for-economists-Rnwauto-report-2.pdf  used on input line 515.
+(pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
+[8 <./figure/introduction-to-R-for-economists-Rnwauto-report-1.pdf>]
+Overfull \hbox (94.96712pt too wide) in paragraph at lines 545--545
+[][]\T1/lmtt/m/n/10 NZUs[] []<-[] []\T1/lmtt/b/n/10 tibble[][]\T1/lmtt/m/n/10 ([][]Universities[] []=[] []\T1/lmtt/b/n/10 c[][]\T1/lmtt/m/n/10 ([][]"UoA"[][],[] []"AUT"[][],[] []"Waikato"[][],[] []"Massey"[][],[] []"Vic"[][],[] []"Canterbury"[][],[] []"Lincoln"[][],[] []"Otago"[][]),[][] 
+ []
+
+
+Overfull \hbox (509.71591pt too wide) in paragraph at lines 546--546
+[]               []\T1/lmtt/m/n/10 lat[] []=[] []\T1/lmtt/b/n/10 c[][]\T1/lmtt/m/n/10 ([][]-[][]36.85224823346041[][],[] []-[][]36.853412307817784[][],[] []-[][]37.78890569065363[][],[] []-[][]40.355225055311955[][],[] []-[][]41.29002684516775[][],[] []-[][]43.52237464482431[][],[] []-[][]43.645401275754104[][],[] []-[][]45.864063192916205[][]),[][] 
+ []
+
+
+Overfull \hbox (493.96596pt too wide) in paragraph at lines 547--547
+[]               []\T1/lmtt/m/n/10 lng[] []=[] []\T1/lmtt/b/n/10 c[][]\T1/lmtt/m/n/10 ([][]174.77252663829262[][],[] []174.76643757919567[][],[] []175.3164528404978[][],[] []175.60943830584307[][],[][]174.76783598210622[][],[] []172.57943539626334[][],[] []172.46426811709463[][],[] []170.5146851684737[][]))[] []%>%[][] 
+ []
+
+
+Overfull \hbox (42.46727pt too wide) in paragraph at lines 552--552
+[]  []\T1/lmtt/b/n/10 addMarkers[][]\T1/lmtt/m/n/10 ([][]lng[] []=[] []~[][]lng,[] []lat[] []=[] []~[][]lat,[] []label[] []=[] []~[][]Universities,[] []popup[] []=[] []"Universities of New Zealand"[][])[][] 
+ []
+
+
+Overfull \hbox (173.71689pt too wide) in paragraph at lines 576--576
+[]\T1/lmtt/m/n/10 ##   `C:\Users\MarmontB\OneDrive - DairyNZ Limited\Documents\R\AARES-R-Workshop\_AARES\linz_download\nz-land-districts.shp'[] 
+ []
+
+
+Overfull \hbox (31.9673pt too wide) in paragraph at lines 578--578
+[][]\T1/lmtt/m/n/10 nz_outline_sf[] []<-[] []\T1/lmtt/b/n/10 st_read[][]\T1/lmtt/m/n/10 ([][]"_AARES/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp"[][])[][] 
+ []
+
+
+Overfull \hbox (310.21649pt too wide) in paragraph at lines 589--589
+[]\T1/lmtt/m/n/10 ##   `C:\Users\MarmontB\OneDrive - DairyNZ Limited\Documents\R\AARES-R-Workshop\_AARES\linz_outline\nz-coastlines-and-islands-polygons-topo-150k.shp'[] 
+ []
+
+[9 <./figure/introduction-to-R-for-economists-Rnwauto-report-2.pdf>]
+<figure/introduction-to-R-for-economists-Rnwauto-report-3.pdf, id=58, 433.62pt x 433.62pt>
+File: figure/introduction-to-R-for-economists-Rnwauto-report-3.pdf Graphic file (type pdf)
+<use figure/introduction-to-R-for-economists-Rnwauto-report-3.pdf>
+Package pdftex.def Info: figure/introduction-to-R-for-economists-Rnwauto-report-3.pdf  used on input line 597.
+(pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
+[10]
+Overfull \hbox (26.71732pt too wide) in paragraph at lines 608--608
+[]\T1/lmtt/m/n/10 ## Warning: attribute variables are assumed to be spatially constant throughout all geometries[] 
+ []
+
+<figure/introduction-to-R-for-economists-Rnwauto-report-4.pdf, id=63, 433.62pt x 433.62pt>
+File: figure/introduction-to-R-for-economists-Rnwauto-report-4.pdf Graphic file (type pdf)
+<use figure/introduction-to-R-for-economists-Rnwauto-report-4.pdf>
+Package pdftex.def Info: figure/introduction-to-R-for-economists-Rnwauto-report-4.pdf  used on input line 614.
+(pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
+[11 <./figure/introduction-to-R-for-economists-Rnwauto-report-3.pdf>]
+<figure/introduction-to-R-for-economists-Rnwauto-report-5.pdf, id=74, 433.62pt x 433.62pt>
+File: figure/introduction-to-R-for-economists-Rnwauto-report-5.pdf Graphic file (type pdf)
+<use figure/introduction-to-R-for-economists-Rnwauto-report-5.pdf>
+Package pdftex.def Info: figure/introduction-to-R-for-economists-Rnwauto-report-5.pdf  used on input line 627.
+(pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
+[12 <./figure/introduction-to-R-for-economists-Rnwauto-report-4.pdf> <./figure/introduction-to-R-for-economists-Rnwauto-report-5.pdf>]
+<figure/introduction-to-R-for-economists-Rnwauto-report-6.pdf, id=91, 433.62pt x 433.62pt>
+File: figure/introduction-to-R-for-economists-Rnwauto-report-6.pdf Graphic file (type pdf)
+<use figure/introduction-to-R-for-economists-Rnwauto-report-6.pdf>
+Package pdftex.def Info: figure/introduction-to-R-for-economists-Rnwauto-report-6.pdf  used on input line 641.
+(pdftex.def)             Requested size: 283.22162pt x 283.23251pt.
+
+Overfull \hbox (5.71738pt too wide) in paragraph at lines 735--735
+[]\T1/lmtt/m/n/10 ##  [33] assertthat_0.2.1     promises_1.2.0.1     nnet_7.3-17          googlesheets4_1.0.1[] 
+ []
+
+
+Overfull \hbox (0.46739pt too wide) in paragraph at lines 735--735
+[]\T1/lmtt/m/n/10 ##  [73] reprex_2.0.2         GPfit_1.0-8          googledrive_2.0.0    x13binary_1.1.57-3[] 
+ []
+
+[13 <./figure/introduction-to-R-for-economists-Rnwauto-report-6.pdf>]
+Underfull \vbox (badness 10000) detected at line 742
+ []
+
+
+Overfull \vbox (1.5065pt too high) detected at line 742
+ []
+
+[14] [15] (./introduction to R for economists.aux)
+Package rerunfilecheck Info: File `"introduction to R for economists".out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 9406 strings out of 478026
+ 153437 string characters out of 5838504
+ 1937340 words of memory out of 5000000
+ 29416 multiletter control sequences out of 15000+600000
+ 526247 words of font info for 57 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 75i,6n,76p,480b,490s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/Users/MarmontB/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on "introduction to R for economists.pdf" (15 pages, 3706114 bytes).
+PDF statistics:
+ 137 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
