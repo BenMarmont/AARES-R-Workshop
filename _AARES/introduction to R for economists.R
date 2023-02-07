@@ -27,12 +27,14 @@ mtcars
 
 mtcars %>% 
   rownames_to_column(var = "Model") %>% 
-  separate(Model, c("make", "model"))
+  separate(Model, c("make", "model")) %>% 
+  view
 
 # Now lets only select those columns relating to engine specifications and other 
 #  specifications
 mtcars %>% 
-  select(cyl, hp, disp, mpg, wt, gear)
+  select(cyl, hp, disp, mpg, wt, gear) %>%
+  view
 
 # Combine both steps and send to flextable
 mtcars %>% 
