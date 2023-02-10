@@ -82,9 +82,8 @@ rownames_to_column(var = "Model") %>%
 
 # Modeltime forecasting---------------------------------------------------------
 
-#install.packages("modeltime")
-#install.packages("tidymodels")
-#install.packages("lubridate")
+#install.packages("package")
+
 library(modeltime)
 library(tidymodels)
 library(tidyverse)
@@ -254,6 +253,10 @@ library(sf)
 library(ggthemes)
 library(ggrepel)
 library(tidyverse)
+
+# LINZ Data Service links
+# https://data.linz.govt.nz/layer/51153-nz-coastlines-and-islands-polygons-topo-150k/
+# https://data.linz.govt.nz/layer/50785-nz-land-districts/
 
 nz_regions_sf <- st_read("_AARES/linz_download/nz-land-districts.shp")
 nz_outline_sf <- st_read("_AARES/linz_outline/nz-coastlines-and-islands-polygons-topo-150k.shp")
